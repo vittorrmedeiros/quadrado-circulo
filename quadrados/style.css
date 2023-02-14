@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252525;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-quadrado {
+    background-color: #1A1A1A;
+    padding: 100px;
+    cursor: pointer;
+}
+
+.quadrado {
+    background-color: #707070;
+    width: 25vw;
+    height: 50vh;
+    transition: 1s;
+}
+
+.box-quadrado:active .quadrado {
+    transform: rotate(360deg);
+    border-radius: 100%;
+    background-color: #989898;
+}
